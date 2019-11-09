@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: my-config-server
+      # 指定要加载的配置文件的名字，不指定则默认为服务名
+#      name: 
+
