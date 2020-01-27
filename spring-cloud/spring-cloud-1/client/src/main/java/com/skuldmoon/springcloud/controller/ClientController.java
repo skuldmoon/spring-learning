@@ -1,6 +1,6 @@
-package vip.vshome.www.controller;
+package com.skuldmoon.springcloud.controller;
 
-import vip.vshome.www.feign.ServiceFeign;
+import com.skuldmoon.springcloud.feign.ServiceFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

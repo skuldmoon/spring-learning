@@ -1,0 +1,19 @@
+server:
+  port: 8100
+
+spring:
+  application:
+    name: config-server
+  # That was a bug fixed in Finchley.SR1
+  # must specify profile, otherwise get IllegalStateException: You need to configure a uri for the git repository
+  profiles:
+    active: native
+  # 指定配置文件的位置，不指定则默认去[classpath:/, classpath:/config, file:./, file:./config]这些目录找
+  cloud:
+    config:
+      allowOverride: true
+      overrideNone: true
+      server:
+        native:
+          search-locations: classpath:/config
+#          search-locations: file:C:/config

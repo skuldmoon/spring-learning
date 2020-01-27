@@ -1,20 +1,32 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
-feign:
-  hystrix:
-    enabled: true
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 3000
-
-ribbon:
-  ReadTimeout: 1000
-  ConnectTimeout: 1000
+#eureka:
+#  instance:
+#    preferIpAddress: true
+#    # eureka client发送心跳给server端的频率
+#    lease-renewal-interval-in-seconds: 1
+#    # eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间
+#    lease-expiration-duration-in-seconds: 1
+#  client:
+#    registerWithEurek
+##feign:a: true
+#    fetchRegistry: true
+#    healthcheck:
+#      enabled: true
+#    serviceUrl:
+#      defaultZone: http://eureka-server:8761/eureka/
+#
+#  hystrix:
+#    enabled: true
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 3000
+#
+#ribbon:
+#  ReadTimeout: 1000
+#  ConnectTimeout: 1000
+#
+#nickname: App
