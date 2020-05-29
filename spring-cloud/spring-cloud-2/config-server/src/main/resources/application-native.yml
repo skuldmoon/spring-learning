@@ -1,0 +1,10 @@
+spring:
+  # 指定配置文件的位置，不指定则默认去[classpath:/, classpath:/config, file:./, file:./config]这些目录找
+  cloud:
+    config:
+      allowOverride: true
+      overrideNone: true
+      server:
+        native:
+#          search-locations: classpath:/config
+          search-locations: file:C:/config

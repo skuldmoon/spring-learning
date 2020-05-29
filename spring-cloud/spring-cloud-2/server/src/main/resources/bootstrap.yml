@@ -1,0 +1,12 @@
+server:
+  port: 8079
+
+spring:
+  application:
+    name: server
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+
